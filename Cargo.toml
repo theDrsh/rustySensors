@@ -1,0 +1,30 @@
+[package]
+name = "rustySensors"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+panic ="abort"
+
+[dependencies]
+cortex-m-rt = "0.7.5"
+defmt = "1.0.1"
+embedded-hal = "1.0.0"
+panic-halt = "1.0.0"
+embedded-alloc = "0.5.1"
+embedded-hal-async = "1.0.0"
+embedded-hal-bus = {version = "0.2.0", features = ["defmt-03"]}
+embedded-io = "0.6.1"
+embedded_hal_0_2 = {package = "embedded-hal", version = "0.2.5", features = ["unproven"]}
+fugit = "0.3.6"
+futures = {version = "0.3.30", default-features = false, features = ["async-await"]}
+hd44780-driver = "0.4.0"
+nb = "1.0"
+panic-probe = {version = "0.3.1", features = ["print-defmt"]}
+pio = "0.3.0"
+rp2040-boot2 = "0.3.0"
+rp2040-hal = "0.11.0"
+portable-atomic = {version = "1.7.0", features = ["critical-section"]}
+critical-section = "1.2.0"
+static_cell = "2.1.0"
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
