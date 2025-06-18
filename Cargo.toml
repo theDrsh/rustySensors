@@ -28,3 +28,4 @@ portable-atomic = {version = "1.7.0", features = ["critical-section"]}
 critical-section = "1.2.0"
 static_cell = "2.1.0"
 cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
+micropb = "0.3.0"
